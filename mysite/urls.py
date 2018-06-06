@@ -16,6 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+'''
+	This routes all the paths of the project. polls/ leads to the URL router of the polls application. 
+	admin/ leads to the admin site, where admins can login and control the website.
+'''
+
 urlpatterns = [
 	path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
